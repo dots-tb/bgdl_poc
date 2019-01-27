@@ -247,7 +247,7 @@ int GoToLivearea(){
 
 	pid = sceKernelGetProcessId();
 	sceAppMgrGetNameById(pid, titleid);
-	snprintf(launch_url, 0x100, "psgm:open?titleid=%s", titleid);
+	snprintf(launch_url, 0x40, "psgm:open?titleid=%s", titleid);
 
 	return sceAppMgrLaunchAppByUri(0xFFFFF, launch_url);
 }
