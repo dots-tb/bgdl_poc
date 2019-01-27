@@ -1,8 +1,11 @@
-﻿// BGDL PoC from FAPS TEAM
+// BGDL PoC from FAPS TEAM
 // RE by @dots_tb with help from:
-//	@CelesteBlue123 @SilicaDevs @possvkey and the NPS Team
+//	@CelesteBlue123 @SilicaDevs @possvkey and the NPS Team 
+//     TheRadziu @AluProductions
+//     xness151x
+//     BlastRock
+//     @juliosueiras
 //Created for use by NoPayStation
-
 #include <stdio.h>
 #include <sys/syslimits.h>
 #include <stdlib.h>
