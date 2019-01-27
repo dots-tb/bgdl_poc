@@ -209,6 +209,7 @@ int scedownload_start_with_rif(scedownload_class *class, const char *title, cons
 	params.result = &result;
 	params.shell_func_8 = (*(class->class_header->func_table))[8];
 
+	//You may delete any of these strcpy lines, except the URL for obvious reasons.
 	strcpy((char*)params.init.addr_DC0->url, url);
 	strcpy((char*)params.init.addr_DC0->license_path, rif);
 	strcpy((char*)params.init.addr_DC0->title, title);
