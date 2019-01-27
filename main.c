@@ -210,10 +210,11 @@ int scedownload_start_with_rif(scedownload_class *class, const char *title, cons
 	params.shell_func_8 = (*(class->class_header->func_table))[8];
 
 	//You may delete any of these strcpy lines, except the URL for obvious reasons.
+	//The files thats are locally stored will be copied to the BGDL folder corresponding to the BGDL ID
 	strcpy((char*)params.init.addr_DC0->url, url);
 	strcpy((char*)params.init.addr_DC0->license_path, rif);
 	strcpy((char*)params.init.addr_DC0->title, title);
-	strcpy((char*)params.init.addr_DC0->icon_path, "ux0:bgdl/icon0.png");// This file must exist in order for the download to start, we have removed it from this source for legal reasons.
+	strcpy((char*)params.init.addr_DC0->icon_path, "ux0:bgdl/icon0.png");// We have removed this from source for legal reasons.
 
 	params.init.addr_DC0->type[0] = params.init.addr_DC0->type[1] = type;
 
