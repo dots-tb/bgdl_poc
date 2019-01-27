@@ -59,12 +59,9 @@ add_executable(${PROJECT_NAME}
 # Library to link to (drop the -l prefix). This will mostly be stubs.
 target_link_libraries(${PROJECT_NAME}
 	SceAppMgr_stub
-	#SceCtrl_stub
 	SceDisplay_stub
-	#SceGxm_stub
 	SceKernelModulemgr_stub
 	SceKernelThreadMgr_stub
-	#SceShellSvc_stub_weak
 	taihen_stub
 	c
 )
