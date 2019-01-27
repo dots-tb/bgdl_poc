@@ -184,6 +184,7 @@ int init_download_class(scedownload_class *class){
 
 #define printf sceClibPrintf
 
+//NOTE: this is not reflected in this PoC, but addr_DC0 will change to an error code on fail. Fix this in your code. lol
 int scedownload_start_with_rif(scedownload_class *class, const char *title, const char *url, const char *rif, int type, uint32_t *bgdlid) {
 	uint32_t result = 1;
 	*bgdlid = 1;
